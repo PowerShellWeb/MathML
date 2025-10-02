@@ -8,6 +8,8 @@ function Get-MathML
     .EXAMPLE
         MathML https://dlmf.nist.gov/2.1
     .EXAMPLE
+        MathML 'https://en.wikipedia.org/wiki/Rose_(mathematics)'
+    .EXAMPLE
         MathML "<math xmlns='http://www.w3.org/1998/Math/MathML'>
             <semantics>
                 <mrow>
@@ -25,7 +27,7 @@ function Get-MathML
     # A url or file path that hopefully contains MathML
     # The response from this URL will be cached.
     [Parameter(ValueFromPipelineByPropertyName)]
-    [Alias('Uri','FilePath','Fullname','Xml','Text')]
+    [Alias('Uri','FilePath','Fullname')]
     [string]
     $Url,    
 
