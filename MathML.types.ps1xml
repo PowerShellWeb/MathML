@@ -3,6 +3,13 @@
   <Type>
     <Name>MathML</Name>
     <Members>
+      <ScriptMethod>
+        <Name>ToString</Name>
+        <Script>
+                        $this.svg.OuterXml
+
+                    </Script>
+      </ScriptMethod>
       <ScriptProperty>
         <Name>SVG</Name>
         <GetScriptBlock>
