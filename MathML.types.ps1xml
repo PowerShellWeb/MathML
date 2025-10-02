@@ -11,6 +11,31 @@
                     </Script>
       </ScriptMethod>
       <ScriptProperty>
+        <Name>ID</Name>
+        <GetScriptBlock>
+                        &lt;#
+.SYNOPSIS
+    Gets a MathML id
+.DESCRIPTION
+    Gets the ID attribute on a MathML element.
+
+    MathML does not need to have an identifier, but it certainly can help.
+#&gt;
+return $this.Math.id
+                    </GetScriptBlock>
+        <SetScriptBlock>
+                        &lt;#
+.SYNOPSIS
+    Sets a MathML id
+.DESCRIPTION
+    Sets the ID attribute on a MathML element.
+
+    MathML does not need to have an identifier, but it certainly can help.
+#&gt;
+$this.Math.setAttribute("id", "$args")
+                    </SetScriptBlock>
+      </ScriptProperty>
+      <ScriptProperty>
         <Name>SVG</Name>
         <GetScriptBlock>
                         &lt;#
